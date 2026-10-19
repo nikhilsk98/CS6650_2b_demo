@@ -1,0 +1,6 @@
+[2026-10-19 06:14:38,498] Nikhils-MacBook-Air/INFO/locust.main: Starting Locust 2.46.7
+[2026-10-19 06:14:38,499] Nikhils-MacBook-Air/INFO/locust.main: Run time limit set to 60 seconds
+[2026-10-19 06:14:38,500] Nikhils-MacBook-Air/INFO/locust.runners: Ramping to 2000 users at a rate of 100.00 per second
+[2026-10-19 06:14:57,589] Nikhils-MacBook-Air/INFO/locust.runners: All users spawned: {"ProductFastHttpUser": 2000} (2000 total users)
+[2026-10-19 06:15:38,333] Nikhils-MacBook-Air/INFO/locust.main: --run-time limit reached, shutting down
+[2026-10-19 06:15:38,461] Nikhils-MacBook-Air/INFO/locust.main: Shutting down (exit code 1)

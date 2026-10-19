@@ -1,0 +1,5 @@
+Method,Name,Error,Occurrences,First Seen,Last Seen
+GET,/products/{productId},"CatchResponseError(""Expected 200, got 0; error=OSError(99, 'Cannot assign requested address')"")",25862,2026-10-19T10:18:21Z,2026-10-19T10:19:26Z
+POST,/products/{productId}/details,"CatchResponseError(""Expected 204, got 0; error=ConnectionRefusedError(111, 'Connection refused')"")",6006,2026-10-19T10:17:50Z,2026-10-19T10:19:18Z
+POST,/products/{productId}/details,"CatchResponseError(""Expected 204, got 0; error=OSError(99, 'Cannot assign requested address')"")",6427,2026-10-19T10:18:21Z,2026-10-19T10:19:26Z
+GET,/products/{productId},"CatchResponseError(""Expected 200, got 0; error=ConnectionRefusedError(111, 'Connection refused')"")",23638,2026-10-19T10:17:50Z,2026-10-19T10:19:18Z

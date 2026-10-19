@@ -34,18 +34,17 @@ module "ecs" {
   log_group_name     = module.logging.log_group_name
   ecs_count          = var.ecs_count
   region             = var.aws_region
+  depends_on         = [docker_registry_image.app]
 }
 
 
 // Build & push the Go app image into ECR
 resource "docker_image" "app" {
-  # Use the URL from the ecr module, and tag it "latest"
   name = "${module.ecr.repository_url}:latest"
 
   build {
-    # relative path from terraform/ → src/
-    context = "../src"
-    # Dockerfile defaults to "Dockerfile" in that context
+    context  = "../src"
+    platform = "linux/amd64"
   }
 }
 
